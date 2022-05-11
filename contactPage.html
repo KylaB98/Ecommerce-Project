@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="contactStyle.css"  rel="stylesheet" type="text/css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab&family=Old+Standard+TT:ital@1&display=swap" rel="stylesheet">
+    <script src="realty.js"></script>
+    <title>Document</title>
+</head>
+<body>
+  <div class="header"></div>
+        <div class="text">
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="homePage.html">About</a>
+            <a href="productsPage.html">Homes</a>
+            <a href="contactPage.html">Contact</a>
+          </div>
+          <span style="font-size:30px;cursor:pointer" onclick="openNav()">Menu</span>
+          <img class="header-image" src="Rinae-logos_transparent.png" alt="header image">
+          </div>
+    <p class="contact">
+        See a home you'd like to tour? Have any comments or inquiries? Let us know by leaving your comment and contact information below!
+  </p>
+  
+      <form action="process.php" method="POST">
+              <div>
+                <label>Your First Name</label>
+                <input type="text" name="firstName" placeholder="Enter First Name">                  
+              </div>
+              <div>
+                <label>Your Last Name</label>
+                <input type="text" name="lastName" placeholder="Enter Last Name">
+              </div>
+              <div>
+                <label>Your Email</label>
+                <input type="email" name="email" placeholder="Enter Email Address">
+              </div>
+              <div>
+                <label>Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
+              </div>
+              <div>
+                <label>Questions and/or Comments</label>
+                <textarea name="message" placeholder="Leave your message here" ></textarea>
+              </div>
+              <div>
+                
+              </div>
+                <input type="submit" name="Submit"   
+                 value="Submit">
+          </form>
+          </div>
+        </div>
+      </div>
+       </div>
+       <footer>
+        <div id="footer-menu">
+            <ul>
+              <li><a href="https://www.instagram.com" target="_blank">Rinae Realty@Instagram</a></li>
+              <li><a href="https://www.facebook.com" target="_blank">Rinae Realty@Facebook</a></li>
+              <li><a href="https://twitter.com" target="_blank">Rinae Realty@Twitter</a></li>
+            </ul>
+        <div><img src="Rinae-logos_transparent.png" alt="Webpage logo" class="center"></div>
+        <p class="copyright">
+          Copyright &copy; 2022, Created by Kyla Wootson
+        </p>
+      </div>
+      </footer>
+</body>
+</html>
